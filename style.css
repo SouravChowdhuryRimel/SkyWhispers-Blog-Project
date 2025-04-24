@@ -1,0 +1,149 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+}
+
+.card img {
+    width: 100%; 
+    height: auto;
+    object-fit: contain;
+}
+
+footer {
+    margin-top: auto; 
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+}
+
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #ffc107;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* Small Screens (Mobile devices) */
+@media (max-width: 576px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-toggler {
+        border-color: #fff;
+    }
+
+    .hero-section {
+        text-align: center;
+        padding: 2rem 1rem;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card img {
+        height: 150px; 
+        object-fit: contain; 
+    }
+
+    .container {
+        padding: 1rem;
+    }
+
+    .form-label {
+        font-size: 14px;
+    }
+
+    .form-control {
+        font-size: 14px;
+    }
+}
+
+/* Medium Screens (Tablets) */
+@media (min-width: 577px) and (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .hero-section {
+        text-align: center;
+        padding: 3rem 1rem;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+
+    .card img {
+        height: 180px;
+        object-fit: contain;
+    }
+}
+
+/* Large Screens (Desktop) */
+@media (min-width: 769px) {
+    .hero-section {
+        padding: 5rem 0;
+    }
+
+    .card img {
+        height: 250px;
+        object-fit: cover;
+    }
+
+    .card {
+        margin-bottom: 40px;
+    }
+
+    .navbar-nav {
+        margin-left: auto;
+    }
+
+    .navbar-nav li {
+        padding-left: 15px;
+    }
+
+    form {
+        padding-bottom: 127px;
+    }
+}
+
+/* Extra Large Screens (Larger Desktops) */
+@media (min-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+
+    .card {
+        margin-bottom: 30px;
+    }
+}

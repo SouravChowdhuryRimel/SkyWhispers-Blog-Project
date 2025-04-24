@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "Zebra Finch - A Colorful Bird",
+        "description": "Learn interesting facts about the Zebra Finch, a small and beautiful bird species.",
+        "image": "https://cdn.britannica.com/10/250610-050-BC5CCDAF/Zebra-finch-Taeniopygia-guttata-bird.jpg",
+        "url": "post1.html"
+    },
+    {
+        "id": 2,
+        "title": "Birds in Flight - Grace in Motion",
+        "description": "Capture the elegance of birds soaring through the sky in this breathtaking moment of flight.",
+        "image": "https://blog.henrys.com/wp-content/uploads/150402-Birds-In-Flight-1024x683.jpg",
+        "url": "post2.html"
+    },
+    {
+        "id": 3,
+        "title": "Eurasian Eagle Owl - The Silent Hunter",
+        "description": "Meet the majestic Eurasian Eagle Owl, one of the largest owl species known for its piercing eyes and powerful flight.",
+        "image": "https://www.worldbirdsanctuary.org/wp-content/uploads/2023/08/Xena-Eurasian-Eagle-Owl-Stu-Goz-8-JD-Edit.jpg",
+        "url": "post3.html"
+    },
+    {
+        "id": 4,
+        "title": "Scarlet Songbird - Nature’s Red Jewel",
+        "description": "Admire the striking red plumage and melodic calls of the Scarlet Songbird, a forest favorite.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRF0zeCqrYUxEmZXRq_IdQtrqlYyAWZ627og&s",
+        "url": "post4.html"
+    },
+    {
+        "id": 5,
+        "title": "Golden Finch - Tiny Wonder of Nature",
+        "description": "Discover the charm of the Golden Finch, known for its vibrant feathers and cheerful song.",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ-LH8XefpZPlQnTj8XQ8taD5mjlnT7LxDk0w&s",
+        "url": "post5.html"
+    },
+    {
+        "id": 6,
+        "title": "Sunset Flight - A Majestic Bird in the Sky",
+        "description": "A breathtaking view of a bird flying against a golden sunset. Discover the beauty of birds in motion.",
+        "image": "https://static.vecteezy.com/system/resources/thumbnails/026/513/090/small_2x/bird-flying-on-sunset-sky-ai-generated-photo.jpg",
+        "url": "post6.html"
+    }
+]

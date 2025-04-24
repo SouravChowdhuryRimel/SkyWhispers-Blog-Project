@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <div id="common-navbar"></div>
+
+    <!-- Container Section -->
+    <header class="bg-secondary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4 fw-bold">SkyWhispers</h1>
+            <p class="lead">Whispers from the skies — thoughts, wings, and wonder</p>
+        </div>
+    </header>
+
+    <!-- Post Section -->
+    <section class="container my-5">
+        <div class="row" id="posts-container"></div>
+    </section>
+
+    <!-- Footer -->
+    <div id="common-footer"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Load navbar
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('common-navbar').innerHTML = data);
+
+        // Load footer
+        fetch('footer.html')
+            .then(res => res.text())
+            .then(data => document.getElementById('common-footer').innerHTML = data);
+
+        // Fetch posts from posts.json
+        fetch('posts.json')
+            .then(res => res.json())
+            .then(posts => {
+                const postsContainer = document.getElementById('posts-container');
+                posts.forEach(post => {
+                    const postCard = `
+            <div class="col-md-4 mb-4">
+              <div class="card">
+                <img src="${post.image}" class="card-img-top" alt="Post Image" />
+                <div class="card-body">
+                  <h5 class="card-title">${post.title}</h5>
+                  <p class="card-text">${post.description}</p>
+                  <a href="${post.url}" class="btn btn-primary">Read More</a>
+                </div>
+              </div>
+            </div>
+          `;
+                    postsContainer.innerHTML += postCard;
+                });
+            });
+    </script>
+</body>
+
+</html>
